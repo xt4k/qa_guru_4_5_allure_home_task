@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.VerifyIssueNameSelenideOnly" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-09T20:15:42" hostname="DESKTOP-VMP5GT0" time="0.966">
+  <properties/>
+  <testcase name="shouldFindSelenideInGitHub()" classname="tests.VerifyIssueNameSelenideOnly" time="0.966"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

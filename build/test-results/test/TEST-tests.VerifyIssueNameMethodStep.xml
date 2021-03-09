@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="tests.VerifyIssueNameMethodStep" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-09T20:15:40" hostname="DESKTOP-VMP5GT0" time="0.947">
+  <properties/>
+  <testcase name="3. Check Github repository issues name (Method_Step-style markup)" classname="tests.VerifyIssueNameMethodStep" time="0.947"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
