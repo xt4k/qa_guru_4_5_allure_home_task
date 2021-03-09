@@ -1,6 +1,5 @@
 package tests;
 
-
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 import pojo.Issue;
@@ -16,7 +15,7 @@ import static java.lang.String.format;
 public class VerifyIssueNameSelenideOnlyListener extends BaseTest {
 
     @Test
-    void shouldFindSelenideInGitHub() {
+    void verifyIssueNameJustSelenideAndListener() {
         addListener("allure", new AllureSelenide());
 
         open(format("%s/%s/%s", BASE_URL, GITHUB_OWNER, GITHUB_REPO_NAME));
@@ -24,6 +23,5 @@ public class VerifyIssueNameSelenideOnlyListener extends BaseTest {
         List<Issue> issueList = apiOps.getIssueList();
         for (Issue issue : issueList)
             $(format("#issue_%s_link", issue.getNumber())).shouldHave(text(issue.getTitle()));
-
     }
 }

@@ -1,6 +1,5 @@
 package tests;
 
-
 import org.junit.jupiter.api.Test;
 import pojo.Issue;
 
@@ -14,7 +13,7 @@ import static java.lang.String.format;
 public class VerifyIssueNameSelenideOnly extends BaseTest {
 
     @Test
-    void shouldFindSelenideInGitHub() {
+    void verifyIssueNameJustCleanSelenide() {
         open(format("%s/%s/%s", BASE_URL, GITHUB_OWNER, GITHUB_REPO_NAME));
         $("span[data-content='Issues']").click();
         List<Issue> issueList = apiOps.getIssueList();

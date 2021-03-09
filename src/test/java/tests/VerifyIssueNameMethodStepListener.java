@@ -1,6 +1,5 @@
 package tests;
 
-
 import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.DisplayName;
@@ -15,15 +14,16 @@ import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 import static io.qameta.allure.Allure.parameter;
 import static io.qameta.allure.SeverityLevel.CRITICAL;
 
-@Feature("Functional tests")
-@Story("Issues operations")
+@Epic("Github repo functional tests")
+@Feature("Issues operations")
+@Story("Method_Step-style markup")
 public class VerifyIssueNameMethodStepListener extends BaseTest {
 
     @Test
-    @Tags({ @Tag("web"), @Tag("important") })
+    @Tags({ @Tag("web"), @Tag("reusable"), @Tag("method-step"), @Tag("listener") })
     @Link(name = "BASE_URL", value = BASE_URL)
-    @DisplayName("4.2 Check Github repository issues name (Method_STep-style markup)")
-    @Owner("yuriy")
+    @DisplayName("4.2 Check Github repository issues name (Method_Step-style markup + Listener)")
+    @Owner("aqa")
     @Severity(CRITICAL)
     void compareGithubRepoIssueName() {
         addListener("allure", new AllureSelenide());

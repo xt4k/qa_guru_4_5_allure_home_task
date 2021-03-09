@@ -1,6 +1,5 @@
 package tests;
 
-
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
@@ -18,12 +17,13 @@ import static io.qameta.allure.Allure.step;
 import static io.qameta.allure.SeverityLevel.CRITICAL;
 import static java.lang.String.format;
 
-@Feature("Functional tests")
-@Story("Issues operations")
+@Epic("Github repo functional tests")
+@Feature("Issues operations")
+@Story("Lambda-style markup")
 public class VerifyIssueNameLambada extends BaseTest {
 
     @Test
-    @Tags({ @Tag("web"), @Tag("important") })
+    @Tags({ @Tag("web"), @Tag("fast"), @Tag("lambda") })
     @Link(name = "BASE_URL", value = BASE_URL)
     @DisplayName("2. Check Github repository issues name (Lambda-style markup)")
     @Owner("yuriy")
