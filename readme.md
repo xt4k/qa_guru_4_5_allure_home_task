@@ -1,1 +1,1 @@
-Here some additional info
+I hope that this hw will be passed shortly

@@ -20,7 +20,7 @@ public class VerifyIssueNameMethodStep extends BaseTest {
     @Test
     @Tags({ @Tag("web"), @Tag("reusable"), @Tag("method-step") })
     @Link(name = "BASE_URL", value = BASE_URL)
-    @DisplayName("3. Check Github repository issues name (Method_Step-style markup)")
+    @DisplayName("Test 3. Check Github repository issues name. Method_Step-style markup.")
     @Owner("aqa")
     @Severity(CRITICAL)
     void compareGithubRepoIssueName() {

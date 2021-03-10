@@ -22,7 +22,7 @@ public class VerifyIssueNameMethodStepListener extends BaseTest {
     @Test
     @Tags({ @Tag("web"), @Tag("reusable"), @Tag("method-step"), @Tag("listener") })
     @Link(name = "BASE_URL", value = BASE_URL)
-    @DisplayName("4.2 Check Github repository issues name (Method_Step-style markup + Listener)")
+    @DisplayName("Test 4.2 Check Github repository issues name. Method_Step-style markup + Listener.")
     @Owner("aqa")
     @Severity(CRITICAL)
     void compareGithubRepoIssueName() {

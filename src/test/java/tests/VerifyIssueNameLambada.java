@@ -25,7 +25,7 @@ public class VerifyIssueNameLambada extends BaseTest {
     @Test
     @Tags({ @Tag("web"), @Tag("fast"), @Tag("lambda") })
     @Link(name = "BASE_URL", value = BASE_URL)
-    @DisplayName("2. Check Github repository issues name (Lambda-style markup)")
+    @DisplayName("Test 2. Check Github repository issues name. Lambda-style markup.")
     @Owner("yuriy")
     @Severity(CRITICAL)
     void compareGithubRepoIssueName() {
